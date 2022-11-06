@@ -1,0 +1,39 @@
+debut
+	entier a<-112 ,b<-382;
+	reel c<-112.44,d<-11.1; 
+	bit e<-0, f<-1,g;
+	caract l<-'l';chaine s<-"abcd";
+	#commentaire::yytzg#
+	debut entier fonction add(entier a,entier b) : 
+	  	c <- a+b;
+		donner c;
+	fin fonction add
+	debut main():
+		d <- fonction add(a,b);
+		si d<>0 alors :
+			ecrire(d, " : est pair ");
+		si_autre (a=b) alors :
+		    ecrire("a egal b");
+		sinon :  
+			ecrire(d, " : est impair ");
+		fin si
+		c<-8;
+		tantque c<10 faire :
+			c<-c+1;
+			ecrire(c,"\n");
+		fin tantque
+
+		option (b)
+			cas 1 : ecrire(" Bienvenue,donner un entier"); 	stop;
+			cas 2 : lire(a); 
+				ecrire( "vous avez donné ",a);
+				stop;
+			default : ecrire( "fin \n");
+		fin option
+
+		g<- (!e)&f; 
+		ecrire(g);
+		ecrire("Fin  programme");
+		#! : NON#
+	fin main
+fin
